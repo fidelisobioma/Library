@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: rgb(75, 185, 228);
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+section {
+  position: relative;
+}
+main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  position: relative;
+}
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 300px 300px 300px; */
+  /* grid-template-columns: repeat(auto-fit 1fr); */
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+}
+.shelf p {
+  font-size: calc(16px + 1vw);
+  color: #000;
+}
+.shelf p + p {
+  color: #ccc;
+}
+.addbook {
+  border: none;
+  background-color: rgb(75, 185, 228);
+  color: #fff;
+  cursor: pointer;
+  font-size: calc(8px + 1vw);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+.addbook2 {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  background-color: rgb(75, 185, 228);
+  color: #fff;
+  cursor: pointer;
+}
+.update {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-left: 8px solid rgb(75, 185, 228);
+  color: brown;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+}
+.update button {
+  background-color: rgb(238, 95, 95);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*input*/
+.form {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  padding: 10px;
+  width: min(600px, 90%);
+  margin: auto;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  top: 30px;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+}
+.showform {
+  visibility: visible;
+}
+input {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+label {
+  display: inline-block;
+  padding: 5px;
+}
+.submit {
+  border: none;
+  background-color: rgb(75, 185, 228);
+  color: #fff;
+  cursor: pointer;
+  font-size: calc(8px + 1vw);
+  border-radius: 8px;
+  padding: 10px 30px;
+  /* position: absolute; */
+  /* bottom: 10px; */
+  right: 10px;
+}
+select {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+}
