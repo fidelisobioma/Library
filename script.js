@@ -43,8 +43,8 @@ Submit.addEventListener("click", (e) => {
   //   console.log(book);
   display.innerHTML += `
   <div class="update">
-        <p class="author">Author: ${book.author}</p>
         <p class="tile">Title: ${book.title}</p>
+        <p class="author">Author: ${book.author}</p>
         <p class="pages">Pages: ${book.numberOfPages}</p>
         <p class="read">Read: ${book.read}</p>
         <button onclick="this.parentElement.style.display='none' ">
