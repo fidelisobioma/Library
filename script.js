@@ -23,14 +23,14 @@ Submit.addEventListener("click", (e) => {
   let bookTitle = title.value;
   let pages = numberOfPages.value;
   let readBook = read.value;
-  //   const myLibrary = [];
-  //   console.log(myLibrary);
 
-  function Book(author, title, numberOfPages, read) {
-    this.author = authorName;
-    this.title = bookTitle;
-    this.numberOfPages = pages;
-    this.read = readBook;
+  class Book {
+    constructor(author, title, numberOfPages, read) {
+      this.author = authorName;
+      this.title = bookTitle;
+      this.numberOfPages = pages;
+      this.read = readBook;
+    }
   }
 
   let book = new Book(
@@ -39,8 +39,7 @@ Submit.addEventListener("click", (e) => {
     `${pages}`,
     `${readBook}`
   );
-  //   myLibrary.push(book);
-  //   console.log(book);
+
   display.innerHTML += `
   <div class="update">
         <p class="tile">Title: ${book.title}</p>
